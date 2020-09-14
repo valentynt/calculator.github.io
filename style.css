@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Montserrat_Regular';
+    src: url('fonts/monsterrat_regular/subset-Montserrat-Regular.eot');
+    src: url('fonts/monsterrat_regular/subset-Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/monsterrat_regular/subset-Montserrat-Regular.woff2') format('woff2'),
+        url('fonts/monsterrat_regular/subset-Montserrat-Regular.woff') format('woff'),
+        url('fonts/monsterrat_regular/subset-Montserrat-Regular.ttf') format('truetype'),
+        url('fonts/monsterrat_regular/subset-Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 320px;
+}
+
+.container {
+    max-width: 1020px;
+    margin: 250px auto 0px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sub-container {
+    background-color: #f5f5f5;
+    border-left: 1px solid #b980e7;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0 40px 0;
+}
+
+.sub-calculator {
+    width: 43%;
+    outline: none;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.prise,
+.payment {
+    width: 100%;
+    font-size: 30px;
+    line-height: 32px;
+    border: 1px solid #bdbcbc;
+    border-radius: 15px;
+    padding: 15px 0px 15px 60px;
+    outline: none;
+}
+
+.title {
+    font-family: 'Montserrat_Regular' , 'sans-serif';
+    font-size: 20px;
+    line-height: 24px;
+    color: #858585;
+    margin-bottom: 10px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: -1px 0 12px 0;
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 1px;
+    cursor: pointer;
+    background: #b980e7; 
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #b980e7;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -13px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.dollar {
+    position: absolute;
+    left: 30px;
+    top: 17px;
+    font-size: 30px;
+    color: #858585;
+}
+
+.sub-percents {
+    width: 33%;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.percents {
+    width: 60%;
+    position: relative;
+    top: 0px;
+    right: 1px;
+    padding: 15px 0px 15px 10px;
+    font-size: 30px;
+    line-height: 32px;
+    outline: none;
+    border: 0px;
+    color: #858585;
+    text-align: right;
+}
+
+.icon-percent {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    font-size: 25px;
+    color: #858585;
+}
+
+.slider {
+    width: 90%;
+    z-index: 2;
+}
+
+.label {
+    display: flex;
+    width: 92%;
+    justify-content: space-between;
+}
+
+.sub-label {
+    font-family: 'Montserrat_Regular' , 'sans-serif';
+    font-size: 16px;
+    line-height: 16px;
+    color: #858585;
+}
+
+
+@media (max-width:767px) {
+    
+    .container {
+        margin: 150px auto 0px auto;
+    }
+
+    .sub-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 30px 0;
+    }
+
+    .sub-calculator {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .prise,
+    .payment {
+        font-size: 25px;
+        line-height: 27px;
+        border-radius: 15px;
+        padding: 10px 0px 10px 50px;
+    }
+
+    .right-payment {
+        padding: 10px 30px 10px 50px;
+    }
+
+    .percents {
+        width: 60%;
+        padding: 10px 0px 10px 10px;
+        font-size: 25px;
+        line-height: 27px;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        height: 23px;
+        width: 23px;
+        margin-top: -12px;
+    }
+
+    .dollar {
+        position: absolute;
+        left: 25px;
+        top: 12px;
+        font-size: 25px;
+    }
+
+    .icon-percent {
+        position: absolute;
+        top: 15px;
+        right: auto;
+        font-size: 20px;
+        color: #858585;
+        z-index: 3;
+    }
+
+    .slider {
+        width: 88%;
+    }
+}
