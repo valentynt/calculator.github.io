@@ -8,38 +8,39 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-calc">
         <form id="calculator" action="">
             <div class="sub-container">
                 <div class="sub-calculator">
-                    <h1 class="title">Home price</h1>
+                    <h3 class="title-calc">ИНВЕСТИЦИИ</h3>
                     <div class="item">
                         <i class="fas fa-dollar-sign dollar"></i>
-                        <input type="number" class="prise" name="sum" id="sum" placeholder="0"
+                        <input type="number" class="inp prise" name="sum" id="sum" placeholder="0"
                             oninput="document.getElementById('rangeType').value = this.value;">
-                        <input type="range" step="0.001" min="0" max="1000" class="slider" id="rangeType" value="0"
+                        <input type="range" step="0.001" min="0" max="1000" class="inp slider" id="rangeType" value="0"
                             oninput="document.getElementById('sum').value = this.value;">
                     </div>
                 </div>
                 <div class="sub-calculator">
-                    <h1 class="title">Down payment</h1>
+                    <h3 class="title-calc">ДОХОД</h3>
                     <div class="item">
                         <i class="fas fa-dollar-sign dollar"></i>
-                        <input type="number" readonly class="payment right-payment" name="resultSum" id="resultSum">
-                        <input type="range" step="1" min="1" max="4" class="slider" id="resultType" value="1">
+                        <input type="number" readonly class="inp payment right-payment" name="resultSum" id="resultSum">
+                        <input type="range" step="1" min="1" max="4" class="inp slider" id="resultType" value="1">
                         <div class="sub-percents">
-                            <input type="number" readonly class="percents" id="resultPercents" value="4"
+                            <input type="number" readonly class="inp percents" id="resultPercents" value="4"
                                 name="percents">
                             <i class="fas fa-percent icon-percent"></i>
                         </div>
                         <div class="label">
-                            <div class="sub-label">1mo.</div>
-                            <div class="sub-label">6mo.</div>
-                            <div class="sub-label">1yr.</div>
-                            <div class="sub-label">10yr.</div>
+                            <div class="sub-label">1мес.</div>
+                            <div class="sub-label">6мес.</div>
+                            <div class="sub-label">1год.</div>
+                            <div class="sub-label">10лет.</div>
                         </div>
                     </div>
                 </div>
